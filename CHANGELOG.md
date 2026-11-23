@@ -13,6 +13,22 @@ They must always increase and are only for the updater: people never see them.
 The history from before Rovex (Orbit) is archived in docs/orbit-changelog-archive.md.
 -->
 
+## Discord, YouTube and a real tutorial
+_0.2.1 · 2026-11-23_
+
+### New
+- **Discord**: show the game you're playing on your Discord profile, with the server's region and an optional join button. Main account only, and off until you turn it on in Settings › Roblox, where a short guide shows how to set it up.
+- **YouTube in the overlay**: watch YouTube without leaving the game. Pop the video out into a small player over Roblox, drag and resize it, make it see-through, or let your clicks go through it to the game.
+- **Tutorial**: a hands-on tutorial walks you through adding your accounts, your main account, playing several at once, joining games and presets. It picks up where you left off, and you can restart it from Settings › About & help.
+- **Your own Spotify app**: a step-by-step guide in Settings › Appearance › Spotify to connect Spotify through your own free Spotify app.
+
+### Changed
+- **Spotify for everyone**: if Spotify doesn't let your account use Rovex's direct connection, the overlay opens Spotify's own player instead, with your playlists and search.
+
+### Fixed
+- **Adding your first account**: the Launchpad now shows it right away, with its name, Robux and games, and it becomes your main account.
+- **Update log window**: the Close button no longer sits on top of the text when the notes are long.
+
 ## Your launcher, leveled up
 _0.2.0 · 2026-11-23_
 
@@ -64,9 +80,6 @@ _0.2.0 · 2026-11-23_
 - **Uninstaller**: it only removes Rovex's own files, never anything else in the folder you chose, plus Rovex's Start menu, desktop and taskbar shortcuts.
 - **Safer saving**: a damaged file is recovered from its backup, password changes are all-or-nothing, changing your background never loses the old one, and exports never overwrite each other.
 - **Smaller fixes**: lots of them, for stability, speed and streamer mode.
-
-### Coming soon
-- **Discord**: show the game you're playing on your Discord profile, with an optional join button.
 
 ## Rovex is here
 _0.1.0 · 2026-11-22_
