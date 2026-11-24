@@ -13,6 +13,19 @@ They must always increase and are only for the updater: people never see them.
 The history from before Rovex (Orbit) is archived in docs/orbit-changelog-archive.md.
 -->
 
+## Clips, private servers and Robux
+_0.2.2 · 2026-11-23_
+
+### New
+- **Clips**: watch your Roblox clips from Medal, Roblox, NVIDIA, Xbox Game Bar or your own folders right in Rovex. Each clip shows the game and the account you were playing on when you recorded it. Click the game to open its page, see which of your other accounts were there, play the game again with the same account, copy a clip and paste it straight into Discord, and trim it to the part that matters. A Storage view shows how much space your clips take per game and can move old ones to the Recycle Bin. Games show their clips on their page and in the Library, and the overlay tells you when a new clip is saved while you play.
+- **Private servers**: one page with every private server your accounts own or can join, across all your games. See who owns it, whether it's active or when it renews, and join with any of your accounts that can get in.
+- **Robux overview**: see the total Robux of all your accounts on the Launchpad, how it changed over the last 7 and 30 days, a chart over time and how much each account has. Click the Robux card, or the total on the Accounts page, to open it. Your history stays on your PC.
+- **Help improve Rovex**: you can choose to share anonymous usage stats, like which features are used and whether something crashed. It's off unless you say yes, never includes your accounts, names, games or friends, and you can change it anytime in Settings › About & help. See rovexlauncher.com/privacy.html.
+
+### Changed
+- **A new logo**: Rovex has a new look, with a new app icon, and the opening and installer animations to match.
+- **Friends in the overlay**: a refresh button next to the search, and the list now updates every minute instead of every five.
+
 ## Discord, YouTube and a real tutorial
 _0.2.1 · 2026-11-23_
 
