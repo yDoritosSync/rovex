@@ -13,6 +13,76 @@ They must always increase and are only for the updater: people never see them.
 The history from before Rovex (Orbit) is archived in docs/orbit-changelog-archive.md.
 -->
 
+## A cleaner Rovex
+_0.3.0 · 2026-11-24_
+
+### New
+- **A new in-game overlay**: it now shows your account, the game (with its icon and banner) and how many friends you can join, and lets your clicks go through to the game everywhere else. Click it, or press its shortcut (Ctrl+Shift+O unless you picked another one), to open it, and Esc to go back to the game. Four tabs (Server, Friends, Accounts, Media), "Bring here" to pull another of your accounts into your server, and a progress card that stays while you rejoin, with buttons when something goes wrong. Pick its corner, opacity, shortcut, or hide it in a game from its "…" menu.
+- **Open roblox.com as an account**: from an account's menu, open the Roblox website already signed in as that account, in its own window.
+- **Session health**: a dot next to each account shows if it's signed in, hasn't been used in a while, or needs you to log in again (one click).
+- **Hide alts from the taskbar**: hide an account's Roblox window from the taskbar and Alt+Tab. Bring them all back from the tray or the running list.
+- **Pending Robux**: see the Robux that's still pending, per account and in total, in the Robux overview.
+- **Shortcuts**: press ? to see them all. Ctrl+Enter plays and Ctrl+. stops launching.
+- **Groups in Who plays**: add or remove a whole group of accounts in one click, and reorder with Alt+arrows.
+- **Reduce motion**: a setting in Settings › Appearance.
+- **Your Discord plan for clips**: Copy now knows if you have Nitro, so it only warns when a clip is too big for your plan (20 MB free, 50 MB Nitro Basic, 500 MB Nitro). The Discord app on your PC tells Rovex which plan you have (never your login), or you can pick it yourself in Settings › Roblox.
+- **Timeline**: from an account's menu, see when it joined, left, was kicked, lost connection or crashed, why, and what to do about it. Accounts and the running list also show why an account dropped. It stays on your PC, and you can turn it off in Settings › Privacy.
+- **Roblox problems**: Rovex tells you when Roblox itself is having problems, what's affected and since when. Before several accounts start you can choose to wait, and they start by themselves when it's back. Auto-rejoin waits too.
+- **For this game**: a game can remember who plays it, its graphics profile, region and private server. Play uses them, and you can still play with someone else just once. An account's own FPS always wins, and your normal settings go back afterwards.
+- **Account checkup**: see which accounts have 2-step verification and a verified email, and fix it in one click. Rovex only reads whether it's on, and never keeps the email.
+- **What Rovex talked to**: Settings › Privacy lists every site Rovex contacted this session, and why.
+- **Desktop shortcuts**: start a preset or an account from your desktop (right-click a preset, or use an account's menu). There's a command line too: `--preset`, `--account`, `--close-all` and `--show`.
+- **Game updates**: starred games show "Updated 5 min ago". You can also turn on a notification, which tells you when you're still on an older server.
+- **Move to a new PC**: one encrypted backup file with your accounts, presets, alts, games, private server links, settings and history. Importing shows what it adds first, and nothing on the PC is removed. You'll find it in Settings › Privacy & security › Backup, with a small reminder when you haven't made one in a while.
+- **Before accounts start**: Rovex says which accounts need to log in or are already playing, and if your PC may not have room for all of them. Fix it there, or start just the ready ones.
+- **Several screens**: Arrange can use this screen, all of them or one by name, and give your alts a screen of their own. Presets can have their own. Too many windows to fit are piled neatly, and Rovex says how many fit.
+- **While you were away**: after 20 minutes or more, Home shows who dropped and why, who was rejoined, who is still playing and for how long. You can turn it off in Settings.
+- **Update when they're closed**: an update now says which accounts are playing, and can wait until you close them.
+- **Tips**: short tips show up the first time you open a page, and you can turn them off anytime.
+
+### Changed
+- **A simpler sidebar**: Home, Library, Friends, Accounts and Clips. Private servers are a tab in Library, Chat is a tab in Friends, and the live previews are the Windows tab in Accounts. Search is in the top bar (Ctrl+K).
+- **Who plays**: pick who plays in one place, at the top right. Every Play button now says who's playing, like "Play · 3 accounts", and each account on the Accounts page has a Plays switch. The checkboxes are only for doing things to several accounts at once.
+- **Home**: a smaller banner, with your presets right under it.
+- **Tutorial**: 4 quick steps (add your account, pick a game, choose who plays, press Play), and nothing starts by itself.
+- **Adding an account**: the Roblox website and Quick Login come first. Username and password, session cookies and imports are under Advanced, with a warning to never paste your cookie anywhere someone asks for it.
+- **Easier to read**: faint text, checkboxes and input borders have more contrast, and text on buttons stays readable whatever accent color you pick.
+- **Update notifications**: Rovex now looks for updates every 30 minutes. When one comes out you get a Windows notification with its name. Click it to see what's new and update in one click.
+- **Phone control**: what your phone and PC send each other is now encrypted, so you need to scan the QR code once more on each phone. Phones you haven't used in 30 days are disconnected, you can disconnect all of them at once, and Rovex won't open phone control on a public Wi-Fi unless you allow it. While Rovex is locked, phones wait until you unlock it.
+- **A smaller download**: Rovex's installer is about a third smaller, so updates arrive faster. It also checks Rovex before installing it, and your old Rovex stays until the new one is in place.
+- **Auto-rejoin decides by the reason**: it goes back by itself after a lost connection, a server shutdown or a crash. After a kick, or when the account joined somewhere else, Rovex says why and asks first. Many accounts rejoin one after the other, with one message. Rejoining after an idle kick has its own setting.
+- **For this game, everywhere**: what a game remembers also counts from presets, desktop shortcuts, clips and your phone.
+- **Safer backups**: new backup files need a password of 10 characters and only hold saved Roblox passwords if you tick it. Older files still import.
+- **Several accounts at once**: the notice is clearer about the risk.
+- **Under the hood**: a big cleanup of Rovex's code, so fixes and new features come faster.
+
+### Fixed
+- **Turbo and FPS**: Turbo no longer drops you to 60 FPS. Every account keeps its own FPS, graphics and volume: accounts with the same settings open together, one group after the other. If you change your FPS in Roblox, Rovex keeps it.
+- **Launching several accounts**: one that breaks no longer stops the others, and Play goes back to normal afterwards.
+- **Why it rejoined**: auto-rejoin messages now say the reason in plain words.
+- **Auto-rejoin**: it no longer takes a kick, a lost connection or a crash for leaving the game. A short internet or Roblox outage no longer makes it give up (it keeps trying for up to 30 minutes), it won't close another account's window to rejoin, and accounts that dropped before Rovex started aren't rejoined by surprise.
+- **Starting an account closed the others**: when Roblox tries out another version on one of your accounts, its installer could run on every launch (also from "Bring here" and Rejoin) and close every Roblox window. Rovex now opens the right version directly, which is also faster, and asks first when a real Roblox update would close the others.
+- **Private servers**: Rejoin and auto-rejoin go back to the private server the right way.
+- **Wrong game**: Retry could start a different game, a private link could carry over to another game, and two accounts could claim the same window.
+- **After restarting Rovex while you play**: several accounts work again once one Roblox window closes, not only after all of them.
+- **Log ins**: an account's renewed session is no longer lost when you lock Rovex during a call, or quit Rovex after changing something in "Open roblox.com as".
+- **Finding Roblox**: also when it's installed for the whole PC, and Rovex explains it when only the Microsoft Store version is there.
+- **Clips clean-up**: it never switches to every game by itself once the picked game's clips are gone.
+- **Updates**: a shortcut that can't be updated no longer shows as a failed update.
+- **Stop**: it now stops every account that's still starting, including fast and parallel launches, and closed windows no longer come back.
+- **Rejoin**: "Rejoin this server" puts you back in the same server, and "Back to previous server" is a separate choice.
+- **Launching after a wait**: accounts that waited for others before starting no longer fail with an expired join ticket.
+- **FPS, graphics and volume per account**: if they couldn't be set when an account starts, Rovex tries again and tells you, instead of starting it as if nothing happened.
+- **Safer files**: when another program is using Roblox's settings file, Rovex tries again instead of overwriting it directly, which could leave it half written.
+- **Closing Roblox**: Rovex now checks and closes exactly the same Roblox process, so another program can't be closed by mistake.
+- **Spotify in the overlay**: much less lag. Next shows the next song right away when Rovex knows it, changes you make in the Spotify app show up almost at once, playing from Rovex starts sooner, and playlists with thousands of songs scroll smoothly. It also asks Spotify less often.
+- **Most played**: a game that moves you between several places, like Grand Piece Online, is now listed once, with its whole time. Your Library, the game's page and the Clips game filter count it as one game too, including time from before this update.
+- **Chat**: when it can't load, it no longer asks Roblox again and again.
+- **Clips**: folders with thousands of videos now show the newest ones, and the Game filter opens.
+- **Home**: the arrows on the banner no longer cover the Play button.
+- **Settings**: changing a setting is instant again, even with a big library.
+- **Crashes**: if something goes wrong inside Rovex, it's written to the log instead of closing the whole app.
+
 ## Clips, private servers and Robux
 _0.2.2 · 2026-11-23_
 
